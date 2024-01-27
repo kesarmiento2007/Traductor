@@ -1,0 +1,178 @@
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/* Utilidades */
+
+.contenedor-centrado{
+    width: min(98rem, 95%);
+    margin: 0 auto;
+
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+    gap: 3rem;
+}
+@media (min-width: 768px) {
+    .contenedor-centrado {
+        min-height: 100vh;
+    }
+}
+
+
+/* Diseño */
+
+body {
+    background-color: rgb(0, 110, 255);
+}
+
+.size-60 {
+    height: 30vh;
+}
+.size-20 {
+    height: 10vh;
+}
+@media (min-width: 768px) {
+    .size-60 {
+        height: 60vh;
+    }
+    .size-20 {
+        height: 20vh;
+    }
+}
+
+.contenedor-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-opciones {
+    justify-content: flex-start;
+}
+
+.mensaje {
+    color: white;
+    font-size: 4rem;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.select-idioma {
+    width: 14rem;
+    text-align: center;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid rgb(167, 3, 79);
+    background-color: rgb(221, 20, 137);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.microfono-btn {
+    -webkit-tap-highlight-color: transparent;
+    display: grid;
+    place-items: center;
+    font-size: 4.5rem;
+    background-color: rgb(127, 9, 238);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.microfono-btn:hover {
+    background-color: rgb(101, 11, 185);
+}
+
+.contenedor-spinner .spinner {
+    width: 10rem;
+    height: 8rem;
+    font-size: 2rem;
+}
+.contenedor-spinner .spinner div {
+    background-color: white;
+    font-size: 5rem;
+}
+
+.contenedor-traduccion {
+    background-color: rgb(127, 9, 238);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.megafono {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.megafono-btn {
+    -webkit-tap-highlight-color: transparent;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    background-color: rgb(221, 20, 137);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.megafono-btn:hover {
+    background-color: rgb(179, 13, 110);
+}
+
+.traduccion-texto {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+}
+@media (min-width: 768px) {
+    .traduccion-texto {
+        font-size: 2.2rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(119, 6, 6);
+    background-color: rgb(196, 11, 11);
+    padding: 1.5rem 2.5rem;
+}
